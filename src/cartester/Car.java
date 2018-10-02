@@ -31,13 +31,13 @@ public class Car {
         passengerLoad = load;
         price = Double.parseDouble(JOptionPane.showInputDialog("Please enter the price of Car 02"));
     }
-    public Car(String dMake, String dModel, String dColour, int dYear, double dPrice, int dLoad){
-        dMake = "Honda";
-        dModel = "Civic";
-        dColour = "Green";
-        dYear = 2003;
-        dPrice = 2499.99;
-        dLoad = 5;
+    public Car(String dColour){
+        make = "Honda";
+        model = "Civic";
+        colour = dColour;
+        year = 2003;
+        price = 2499.99;
+        passengerLoad = 5;
     }
     public String toString() {
         return  "----------------"+ "\n"
