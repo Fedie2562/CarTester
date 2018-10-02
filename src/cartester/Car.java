@@ -21,11 +21,27 @@ public class Car {
         price = Double.parseDouble(JOptionPane.showInputDialog("Please enter the price of Car 01"));
         colour = JOptionPane.showInputDialog("Please enter the colour of Car 01");
         passengerLoad = Integer.parseInt(JOptionPane.showInputDialog("Please enter the amount of "
-        + "passengers (including the driver) Car 01 can hold"));
+        + "people (including the driver) Car 01 can hold"));
+    }
+    public Car(String make2, String model2, int year2, int load){
+        make = make2;
+        model = model2;
+        colour = JOptionPane.showInputDialog("Please enter the colour of Car 02");
+        year = year2;
+        passengerLoad = load;
+        price = Double.parseDouble(JOptionPane.showInputDialog("Please enter the price of Car 02"));
+    }
+    public Car(String dMake, String dModel, String dColour, int dYear, double dPrice, int dLoad){
+        dMake = "Honda";
+        dModel = "Civic";
+        dColour = "Green";
+        dYear = 2003;
+        dPrice = 2499.99;
+        dLoad = 5;
     }
     public String toString() {
         return  "----------------"+ "\n"
-                + "Model: " + model + "\n"
+                + "Model: " + model+"\n"
                 + "Make: " + make + "\n"
                 + "Year: " + year + "\n"
                 + "Price: "+ price+ "\n"
