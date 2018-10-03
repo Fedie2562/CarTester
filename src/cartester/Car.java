@@ -40,12 +40,15 @@ public class Car {
         passengerLoad = 5;
     }
     public String toString() {
-        return  "----------------"+ "\n"
-                + "Model: " + model+"\n"
+        return    "Model: " + model+"\n"
                 + "Make: " + make + "\n"
                 + "Year: " + year + "\n"
                 + "Price: "+ price+ "\n"
                 + "Colour: "+colour+"\n"
-                + "Capacity: "+passengerLoad;
+                + "Capacity: "+passengerLoad+
+                "\n----------------";
+    }
+    public void honk(){
+        System.out.println("Beep! Beep!");
     }
 }
